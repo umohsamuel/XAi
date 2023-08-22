@@ -17,3 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.myoga {
+  filter: brightness(35%);
+}
+.egbon {
+  filter: brightness(80%);
+}
