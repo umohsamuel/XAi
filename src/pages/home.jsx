@@ -302,7 +302,7 @@ function Home() {
             autoPlay
             loop
             muted
-            className="w-full t absolute bottom-0 h-52 blur-sm"
+            className="w-full absolute bottom-0 h-52 blur-sm"
           />
         </div>
       </div>
