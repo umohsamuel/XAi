@@ -18,6 +18,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid pink; */
+}
+
+/* canvas {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block; 
+} */
+
 .myoga {
   filter: brightness(30%);
 }
