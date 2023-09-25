@@ -4,6 +4,7 @@ import placeholderdown from "../assets/videos/placeholderdown.mp4";
 import bottom from "../assets/videos/bottom.png";
 import boy from "../assets/videos/boy.png";
 import exchangevid from "../assets/videos/exchangevid.mp4";
+import postcommunity from "../assets/videos/postcommunity.gif";
 
 export default {
   bg1p1,
@@ -11,5 +12,5 @@ export default {
   placeholderdown,
   bottom,
   boy,
-  exchangevid,
+  exchangevid,postcommunity
 };

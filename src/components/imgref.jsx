@@ -13,6 +13,12 @@ import exchangetopleft from "../assets/images/exchangetopleft.svg";
 import exchangetopright from "../assets/images/exchangetopright.svg";
 import exchangebottomleft from "../assets/images/exchangetopright.svg";
 import exchangebottomright from "../assets/images/exchangebottomright.svg";
+import communitychatlogo from "../assets/images/communitychatlogo.svg";
+import twitterlogo from "../assets/images/twitterlogo.svg";
+import developerchatlogo from "../assets/images/developerchatlogo.svg";
+import cosmosforumlogo from "../assets/images/cosmosforumlogo.svg";
+import footervector from "../assets/images/footervector.svg";
+import cosmoslogo from "../assets/images/cosmoslogo.svg";
 
 export default {
   xailogo,
@@ -30,4 +36,9 @@ export default {
   exchangetopright,
   exchangebottomleft,
   exchangebottomright,
+  communitychatlogo,
+  twitterlogo,
+  developerchatlogo,
+  cosmosforumlogo,
+  footervector,cosmoslogo
 };

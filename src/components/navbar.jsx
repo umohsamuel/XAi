@@ -3,7 +3,7 @@ import imgref from "./imgref";
 
 function Navbar() {
   return (
-    <nav className="z-[99999] fixed flex justify-between items-center w-[90%] mt-[3.5%] h-14 border rounded-xl pr-14 pl-9 left-[50%] translate-x-[-50%] backdrop-blur-[2px]">
+    <nav className="z-[99999] absolute flex justify-between items-center w-[90%] mt-[3.5%] h-14 border rounded-xl pr-14 pl-9 left-[50%] translate-x-[-50%] backdrop-blur-[2px] top-[2.5%] tablet:top-0">
       <img src={imgref.xailogo} alt="" />
 
       <ul className="flex gap-8 text-[#6A6B6D]">

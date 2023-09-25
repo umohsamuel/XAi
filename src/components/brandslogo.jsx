@@ -1,6 +1,6 @@
 function Brandslogo() {
   return (
-    <div className="grid my-[12.5vh] w-full grid-cols-6 place-items-center px-36 gap-14 ">
+    <div className="grid my-[12.5vh] w-full tablet:grid-cols-6 place-items-center px-[5%] gap-[5%] tablet:px-36 tablet:gap-14 ">
       <svg
         width="94"
         height="26"

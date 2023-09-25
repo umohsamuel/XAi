@@ -1,21 +1,42 @@
 import React from "react";
 import video from "../components/video";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.05 ,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+};
 
 function Hero() {
   return (
-    <div className="flex flex-col justify-center relative w-full h-[100vh] z-20 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+    <div className="snap-start flex flex-col justify-center relative w-full h-[100vh] z-20 bg-opacity-30 backdrop-filter backdrop-blur-lg">
       <div className=" h-full w-full flex absolute justify-center items-center rounded-3xl ">
         <video
           src={video.bg1p1}
           autoPlay
           loop
           muted
+          controls={false}
           className="egbon absolute w-[95%] h-[95%] object-cover rounded-3xl border z-[1]"
         />
       </div>
       {/* Navbar used to be here  */}
 
-      <div className="z-30  w-[34.125rem] pl-32">
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="z-30  tablet:w-[34.125rem] max-w-[80%] pl-8 tablet:pl-32"
+      >
         <p className="flex items-center font-medium text-sm gap-2">
           Okay let us{" "}
           <svg
@@ -46,7 +67,7 @@ function Hero() {
             </svg>
           </span>
         </p>
-        <h1 className="font-bold text-5xl mt-5">
+        <h1 className="font-bold text-2xl tablet:text-5xl mt-5">
           A.I That Answers Everything About the Universe
         </h1>
         <button className="flex justify-center items-center gap-4 bg-white font-normal text-sm text-black rounded-full px-8 py-3 mt-12">
@@ -64,7 +85,7 @@ function Hero() {
             />
           </svg>
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 }

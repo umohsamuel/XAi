@@ -1,5 +1,4 @@
 import React from "react";
-import video from "../components/video";
 import Hero from "../screens/hero";
 import Navbar from "../components/navbar";
 import Constilations from "../screens/constilations";
@@ -9,10 +8,14 @@ import Chatbox from "../screens/chatbox";
 import CoInVad from "../screens/coinvad";
 import Unlike from "../screens/unlike";
 import Exchange from "../screens/exchange";
+import Community from "../screens/community";
+import Future from "../screens/future";
+import Footer from "../screens/footer";
+import ThinExCard from "../components/exchangecardthin";
 
 function Home() {
   return (
-    <div className="w-full relative ">
+    <div className="w-full relative snap-mandatory snap-y scroll-smooth">
       <Navbar />
 
       <Hero />
@@ -20,6 +23,7 @@ function Home() {
       <Constilations />
 
       <Chatbox />
+      {/* <div className=" h-[25vh] bg-gradient-to-b from-transparent to-[#05080A]"></div> */}
 
       <CoInVad />
 
@@ -27,6 +31,11 @@ function Home() {
 
       <Exchange />
 
+      <Community />
+
+      <Future />
+
+      <Footer />
       {/* <ThreedModel /> */}
     </div>
   );

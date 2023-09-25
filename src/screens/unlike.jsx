@@ -1,9 +1,40 @@
 import React from "react";
 import imgref from "../components/imgref";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariantsFast = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.25 ,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+};
+
+const fadeInAnimationVariantsSlow = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5 ,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+};
+
+
 
 function Unlike() {
   return (
-    <div className=" flex flex-col items-center">
+    <div className="snap-start mt-[25vh] flex flex-col items-center max-w-[95%] mx-auto">
       <h1 className=" text-center max-w-[445px] font-medium text-[51px] tracking-[-1.12px] leading-[56px]">
         Unlike any tool you’ve used before
       </h1>
@@ -11,14 +42,42 @@ function Unlike() {
         Designed to the last pixel and engineered with unforgiving precision,
         Linear combines UI elegance with world-class performance.
       </p>
-      <div className=" mt-[138px] max-w-[1043px]">
-        <div className="flex gap-[22.04px]">
-          <img src={imgref.unlikelefttop} alt="" />
-          <img src={imgref.unlikerighttop} alt="" />
+      <div className=" mx-auto mt-[138px] max-w-[100%] w-[90%]">
+        <div className="flex flex-col tablet:flex-row justify-between gap-4 ">
+          <motion.img
+            variants={fadeInAnimationVariantsFast}
+            initial="hidden"
+            whileInView="visible"
+            src={imgref.unlikelefttop}
+            alt=""
+            className=" max-h-[90vh]"
+          />
+          <motion.img
+            variants={fadeInAnimationVariantsSlow}
+            initial="hidden"
+            whileInView="visible"
+            src={imgref.unlikerighttop}
+            alt=""
+            className=" max-h-[90vh]"
+          />
         </div>
-        <div className="flex gap-[22.04px] mt-[32.13px]">
-          <img src={imgref.unlikebottomleft} alt="" />
-          <img src={imgref.unlikebottomright} alt="" />
+        <div className="flex flex-col tablet:flex-row justify-between gap-4 mt-4 tablet:mt-[32.13px] ">
+          <motion.img
+            variants={fadeInAnimationVariantsFast}
+            initial="hidden"
+            whileInView="visible"
+            src={imgref.unlikebottomleft}
+            alt=""
+            className=" max-h-[90vh]"
+          />
+          <motion.img
+            variants={fadeInAnimationVariantsSlow}
+            initial="hidden"
+            whileInView="visible"
+            src={imgref.unlikebottomright}
+            alt=""
+            className=" max-h-[90vh]"
+          />
         </div>
       </div>
     </div>
