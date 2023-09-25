@@ -4,15 +4,7 @@ import imgref from "../components/imgref";
 
 function Future() {
   return (
-    <div className="snap-start mt-[25vh]">
-      <img
-        autoPlay
-        loop
-        muted
-        controls={false}
-        src={video.postcommunity}
-        className="z-30 w-[80%] h-[100vh] mx-auto object-cover rounded-full"
-      />
+    <div className="snap-start mt-[25vh] w-full h-full">
 
       <div className=" mt-[50vh] w-full flex flex-col items-center gap-[70px]">
         <img src={imgref.xailogo} alt="" className=" h-[69px] w-[73.39px]" />

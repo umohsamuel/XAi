@@ -33,6 +33,9 @@ const fadeInAnimationVariants2 = {
 };
 
 function Constilations() {
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="snap-start relative h-full w-full snap-y">
       {/* logos  */}
@@ -43,6 +46,7 @@ function Constilations() {
           loop
           muted
           controls={false}
+          onContextMenu={handleContextMenu}
           className="myoga absolute w-full h-full  rotate-180 object-cover blur-sm"
         />
         <img

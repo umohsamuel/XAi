@@ -12,8 +12,12 @@ import Community from "../screens/community";
 import Future from "../screens/future";
 import Footer from "../screens/footer";
 import ThinExCard from "../components/exchangecardthin";
+import video from "../components/video";
 
 function Home() {
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="w-full relative snap-mandatory snap-y scroll-smooth">
       <Navbar />
@@ -32,6 +36,20 @@ function Home() {
       <Exchange />
 
       <Community />
+
+      <div className="relative my-[25vh] h-[100vh]">
+        <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
+        <video
+          src={video.unstablepage}
+          autoPlay
+          loop
+          muted
+          controls={false}
+          onContextMenu={handleContextMenu}
+          className=" absolute w-full h-[100vh] lw-[100vw] object-cover  z-[-1]"
+        />
+        <div className="absolute h-[20vh] bottom-0 translate-y-[50%] w-full bg-gradient-to-t from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
+      </div>
 
       <Future />
 

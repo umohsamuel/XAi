@@ -17,6 +17,9 @@ const fadeInAnimationVariants = {
 };
 
 function Hero() {
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="snap-start flex flex-col justify-center relative w-full h-[100vh] z-20 bg-opacity-30 backdrop-filter backdrop-blur-lg">
       <div className=" h-full w-full flex absolute justify-center items-center rounded-3xl ">
@@ -26,6 +29,7 @@ function Hero() {
           loop
           muted
           controls={false}
+          onContextMenu={handleContextMenu}
           className="egbon absolute w-[95%] h-[95%] object-cover rounded-3xl border z-[1]"
         />
       </div>

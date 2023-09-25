@@ -4,13 +4,10 @@ import video from "../components/video";
 import ThinExCard from "../components/exchangecardthin";
 import FatExCard from "../components/fatexchangecard";
 
-
-
-
 function Exchange() {
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-    };
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="snap-start mx-auto flex flex-col items-center mt-[50vh] max-w-[90%] relative">
       <video
