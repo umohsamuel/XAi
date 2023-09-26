@@ -38,9 +38,8 @@ function Constilations() {
   };
   return (
     <div className="snap-start relative h-full w-full snap-y">
-      {/* logos  */}
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
-        <video
+        {/* <video
           src={video.placeholder}
           autoPlay
           loop
@@ -48,7 +47,17 @@ function Constilations() {
           controls={false}
           onContextMenu={handleContextMenu}
           className="myoga absolute w-full h-full  rotate-180 object-cover blur-sm"
-        />
+        /> */}
+
+        <div className=" w-[100%] h-[100%]  absolute z-[-1]">
+          <iframe
+            src="https://my.spline.design/untitled-ff421a0536bbb0d07af5b5a5ca385b61/"
+            frameborder="0"
+            width="100%"
+            height="100%"
+            event-target = "global"
+          ></iframe>
+        </div>
         <img
           src={video.boy}
           autoPlay
