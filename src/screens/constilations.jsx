@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import video from "../components/video";
 import Brandslogo from "../components/brandslogo";
 import { motion } from "framer-motion";
+// import Spline from "@splinetool/react-spline";
+import { Spline } from "react-spline";
+// import splineobj from "../assets/scene.splinecode"
 
 const fadeInAnimationVariants = {
   visible: {
@@ -36,8 +39,24 @@ function Constilations() {
   const handleContextMenu = (e) => {
     e.preventDefault();
   };
+
+  // useEffect(() => {const iframe = document.querySelector("iframe");
+  // iframe.contentWindow.addEventListener("mousemove", (e) => {
+  //   const rect = iframe.getBoundingClientRect();
+  //   const x = e.clientX - rect.left;
+  //   const y = e.clientY - rect.top;
+  //   iframe.contentWindow.postMessage({ x, y }, "*");
+  // });  }, []);
+
   return (
     <div className="snap-start relative h-full w-full snap-y">
+      <img
+        src={video.boy}
+        autoPlay
+        loop
+        muted
+        className="w-full absolute bottom-0 translate-y-[30%] h-[140px] lh-32 blur-sm"
+      />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
         {/* <video
           src={video.placeholder}
@@ -49,22 +68,16 @@ function Constilations() {
           className="myoga absolute w-full h-full  rotate-180 object-cover blur-sm"
         /> */}
 
-        <div className=" w-[100%] h-[100%]  absolute z-[-1]">
-          <iframe
+        <div className=" w-[100%] h-[100%]  absolute z-[99999]">
+          {/* <iframe
             src="https://my.spline.design/untitled-ff421a0536bbb0d07af5b5a5ca385b61/"
             frameborder="0"
             width="100%"
             height="100%"
-            event-target = "global"
-          ></iframe>
+            event-target="global"
+          ></iframe> */}
+          <Spline className="border border-red-500" scene="https://prod.spline.design/dpTC477hE8QyTukQ/scene.splinecode" />
         </div>
-        <img
-          src={video.boy}
-          autoPlay
-          loop
-          muted
-          className="w-full absolute bottom-0 h-32 blur-sm"
-        />
 
         {/* content of section 2  */}
         <div className="z-30 h-full -top-3 flex flex-col gap-[25vh]">
