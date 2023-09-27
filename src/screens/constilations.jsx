@@ -70,6 +70,7 @@ function Constilations() {
             {/* Content of the front element */}
           </div>
 
+
           <Splinescene events-target="global" />
         </div>
 
