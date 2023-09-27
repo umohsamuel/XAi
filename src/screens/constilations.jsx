@@ -55,12 +55,19 @@ function Constilations() {
 
   return (
     <div className="snap-start relative h-full w-full snap-y">
+      {/* <img
+        src={video.boy}
+        autoPlay
+        loop
+        muted
+        className="w-full absolute top-0 rotate-180 translate-y-[-30%] h-[140px] z-[999] lh-32 blur-sm"
+      /> */}
       <img
         src={video.boy}
         autoPlay
         loop
         muted
-        className="w-full absolute bottom-0 translate-y-[30%] h-[140px] lh-32 blur-sm"
+        className="w-full absolute bottom-0 translate-y-[30%] h-[140px] z-[999] lh-32 blur-sm"
       />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
         
