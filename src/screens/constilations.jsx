@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import video from "../components/video";
 import Brandslogo from "../components/brandslogo";
 import { motion } from "framer-motion";
-// import Spline from "@splinetool/react-spline";
-import { Spline } from "react-spline";
-// import splineobj from "../assets/scene.splinecode"
+import Splinescene from "../components/Splinescene";
 
 const fadeInAnimationVariants = {
   visible: {
@@ -40,13 +38,20 @@ function Constilations() {
     e.preventDefault();
   };
 
-  // useEffect(() => {const iframe = document.querySelector("iframe");
-  // iframe.contentWindow.addEventListener("mousemove", (e) => {
-  //   const rect = iframe.getBoundingClientRect();
-  //   const x = e.clientX - rect.left;
-  //   const y = e.clientY - rect.top;
-  //   iframe.contentWindow.postMessage({ x, y }, "*");
-  // });  }, []);
+  useEffect(() => {
+    // Add a mousemove event listener to the background element
+    const backgroundElement = document.querySelector(".background-element");
+    if (backgroundElement) {
+      backgroundElement.addEventListener("mousemove", handleMouseMove);
+    }
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      if (backgroundElement) {
+        backgroundElement.removeEventListener("mousemove", handleMouseMove);
+      }
+    };
+  }, []);
 
   return (
     <div className="snap-start relative h-full w-full snap-y">
@@ -58,29 +63,18 @@ function Constilations() {
         className="w-full absolute bottom-0 translate-y-[30%] h-[140px] lh-32 blur-sm"
       />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
-        {/* <video
-          src={video.placeholder}
-          autoPlay
-          loop
-          muted
-          controls={false}
-          onContextMenu={handleContextMenu}
-          className="myoga absolute w-full h-full  rotate-180 object-cover blur-sm"
-        /> */}
+        
+        <div className=" w-[100%] h-[100%]  absolute ">
+          {/* This is the element you want to be non-responsive to mouse events */}
+          <div className="front-element">
+            {/* Content of the front element */}
+          </div>
 
-        <div className=" w-[100%] h-[100%]  absolute z-[99999]">
-          {/* <iframe
-            src="https://my.spline.design/untitled-ff421a0536bbb0d07af5b5a5ca385b61/"
-            frameborder="0"
-            width="100%"
-            height="100%"
-            event-target="global"
-          ></iframe> */}
-          <Spline className="border border-red-500" scene="https://prod.spline.design/dpTC477hE8QyTukQ/scene.splinecode" />
+          <Splinescene events-target="global" />
         </div>
 
         {/* content of section 2  */}
-        <div className="z-30 h-full -top-3 flex flex-col gap-[25vh]">
+        <div className="z-30 h-full -top-3 flex flex-col gap-[25vh]"  style={{ pointerEvents: "none" }}>
           <Brandslogo />
 
           <motion.div
@@ -93,16 +87,13 @@ function Constilations() {
               The Universe Unveiled.
             </h1>
             <p className="max-w-[30.6rem] text-[#FFD1D1] text-base font-extralight">
-              Discover the Hidden Wonders of the Cosmos - Dive into the
-              Universe's Greatest Mysteries with Our A.I
+              Discover the Hidden Wonders of the Cosmos - Dive into the Universe's Greatest Mysteries with Our A.I
             </p>
           </motion.div>
 
           <div className=" w-full h-full flex flex-col justify-end items-center">
             <div>
-              <p className=" font-semibold text-[10.79px] text-[#818B95]">
-                COMMUNITY-OWNED AND OPERATED
-              </p>
+              <p className=" font-semibold text-[10.79px] text-[#818B95]">COMMUNITY-OWNED AND OPERATED</p>
               <div className=" tablet:flex gap-24">
                 <motion.p
                   variants={fadeInAnimationVariants2}
@@ -126,9 +117,7 @@ function Constilations() {
             </div>
           </div>
           <button className="w-[80%] mx-auto flex gap-4  items-center ">
-            <span className="pb-1 font-semibold text-[20.33px]">
-              Powerful features{" "}
-            </span>
+            <span className="pb-1 font-semibold text-[20.33px]">Powerful features{" "}</span>
             <svg
               width="16"
               height="16"
