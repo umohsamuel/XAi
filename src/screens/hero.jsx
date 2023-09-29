@@ -30,7 +30,7 @@ function Hero() {
           muted
           controls={false}
           onContextMenu={handleContextMenu}
-          className="egbon absolute w-[95%] h-[95%] object-cover rounded-3xl border z-[1]"
+          className="egbon absolute w-[90%] tablet:w-[95%] h-[95%] object-cover rounded-3xl border z-[1]"
         />
       </div>
       {/* Navbar used to be here  */}
@@ -39,7 +39,7 @@ function Hero() {
         variants={fadeInAnimationVariants}
         initial="hidden"
         whileInView="visible"
-        className="z-30  tablet:w-[34.125rem] max-w-[80%] pl-8 tablet:pl-32"
+        className="z-30  tablet:w-[34.125rem] max-w-[80%] pl-10 tablet:pl-32"
       >
         <p className="flex items-center font-medium text-sm gap-2">
           Okay let us{" "}
@@ -71,7 +71,7 @@ function Hero() {
             </svg>
           </span>
         </p>
-        <h1 className="font-bold text-2xl tablet:text-5xl mt-5">
+        <h1 className="font-bold text-2xl tablet:text-5xl mt-5 text-transparent bg-clip-text bg-gradient-to-bl from-[#D5D5D8] to-[#EDEBF5]">
           A.I That Answers Everything About the Universe
         </h1>
         <button className="flex justify-center items-center gap-4 bg-white font-normal text-sm text-black rounded-full px-8 py-3 mt-12">

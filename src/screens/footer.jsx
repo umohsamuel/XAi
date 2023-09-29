@@ -4,18 +4,18 @@ import Footerlogo from "../components/footerlogos";
 
 function Footer() {
   return (
-    <footer className="snap-start w-[95%] h-full mx-auto mt-[25vh] mb-[3px] p-[1.1px] bg-gradient-to-tr from-[#FFFFFF]  to-[#353436] rounded-[37.39px]  ">
-      <div className=" min-h-fit lpt-[68px] py-[26.167px] px-[5%] tablet:px-[88px] bg-gradient-to-tr from-[#0D0C0F] to-[#222124] rounded-[37.39px] relative flex flex-col gap-[74px]">
+    <footer className="snap-start w-[95%] h-full mx-auto mt-[25vh] mb-[3px] p-[1.1px] bg-gradient-to-tr from-[#FFFFFF]  to-[#353436] rounded-[37.39px] ">
+      <div className=" min-h-fit lpt-[68px] tablet:py-[26.167px] px-[10%] tablet:px-[88px] bg-gradient-to-tr from-[#0D0C0F] to-[#222124] rounded-[37.39px] relative flex flex-col gap-[74px] py-14">
         <img
           src={imgref.footervector}
           alt=""
-          className="absolute right-0 top-0"
+          className="absolute right-0 top-0 w-[178px] tablet:w-full"
         />
 
-        <div className=" flex w-[40%] justify-between">
+        <div className=" flex w-[70%] tablet:w-[40%] justify-between z-[999]">
           <div>
-            <h3 className=" font-medium text-[10px] text-[#5E5E61]">COMPANY</h3>
-            <ul className=" mt-4 text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
+            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">COMPANY</h3>
+            <ul className=" mt-4 text-[10px] tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
               <li>About</li>
               <li>Customers</li>
               <li>Blog</li>
@@ -25,10 +25,10 @@ function Footer() {
           </div>
 
           <div>
-            <h3 className=" font-medium text-[10px] text-[#5E5E61]">
+            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">
               RESOURCES
             </h3>
-            <ul className=" mt-4 text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
+            <ul className=" mt-4 text-[10px] tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
               <li>FAQs</li>
               <li>Careers</li>
               <li>Partnerships</li>

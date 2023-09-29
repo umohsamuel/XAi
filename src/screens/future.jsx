@@ -5,15 +5,14 @@ import imgref from "../components/imgref";
 function Future() {
   return (
     <div className="snap-start mt-[25vh] w-full h-full">
-
       <div className=" mt-[50vh] w-full flex flex-col items-center gap-[70px]">
         <img src={imgref.xailogo} alt="" className=" h-[69px] w-[73.39px]" />
-        <h1 className=" font-medium text-[51px] tracking-[-0.57px] leading-[51px] text-transparent bg-clip-text bg-gradient-to-br from-[#F6F6F6] via-[#A4A4A5] to-[#F3F3F3] text-center">
+        <h1 className=" font-medium text-[30px] tablet:text-[51px] tracking-[-0.57px] leading-[34.8px] tablet:leading-[51px] text-transparent bg-clip-text bg-gradient-to-br from-[#F6F6F6] via-[#A4A4A5] to-[#F3F3F3] text-center">
           <p>Built for the future.</p>
           <p>Available today.</p>
         </h1>
 
-        <div className="flex items-center text-base font-medium leading-[24.5px] w-full max-w-[331.05px] justify-between">
+        <div className="flex items-center text-[10px] tablet:text-base font-medium leading-[24.5px] w-full max-w-[331.05px] tablet:justify-between gap-[2rem] justify-center">
           <button className=" bg-gradient-to-r from-[#455EB5] from-50% via-[#6040D2] to-[#673FD7] px-6 py-3 rounded-full whitespace-nowrap">
             Sign up for free
           </button>

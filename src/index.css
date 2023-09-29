@@ -23,6 +23,8 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
   /* border: 1px solid pink; */
 }
 
@@ -47,6 +49,10 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: hidden;
+  }
 }
 
 /* .bghere{
@@ -95,4 +101,53 @@
   position: absolute;
   z-index: 20;
   backdrop-filter: blur(12vmax);
+}
+
+.rotate {
+  animation: rotate 0.75s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ogadiv {
+  overflow: hidden;
+  white-space: nowrap;
+  /* display: flex; */
+  /* padding: 60px 0; */
+}
+
+.ogadiv:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  /* display: flex; */
+  animation: 10s slide infinite linear;
+  display: inline-block;
+}
+
+/* .logos-slide svg {
+  height: 50px;
+  
+} */
+.logos-slide img {
+  height: 50px;
+  margin: 0 100px;
+  display: inline-block;
 }

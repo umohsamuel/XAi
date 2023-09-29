@@ -26,21 +26,34 @@ function Chatbox() {
 
   return (
     <div className="snap-start mt-32 w-full mx-auto flex flex-col gap-14 items-center mb-[25vh]">
-      <p className=" text-[51px] font-medium tracking-[-1.12px]">
+      <p className=" text-[27.37px] tablet:text-[51px] font-medium tracking-[-1.12px]">
         Chatbot that
       </p>
-      <p className=" font-normal text-center max-w-[605px] text-[22px]">
+      <p className=" font-normal text-center tablet:max-w-[605px] w-full max-w-[325px] px-[5%] tablet:leading-7 text-xs tablet:text-[22px]">
         Designed to the last pixel and engineered with unforgiving precision,
         Linear combines UI elegance with world-class performance.
       </p>
-      <div className=" bgforthis  h-[150vh] origin-center  mx-auto w-full relative flex justify-center">
+      <div className=" bgforthis h-[50vh] tablet:h-[150vh] origin-center  mx-auto w-full relative flex justify-center">
         <motion.img
           variants={fadeInAnimationVariants}
           initial="hidden"
           whileInView="visible"
           src={imgref.ArtificiumChatbox}
           alt=""
-          className=" mt-12 z-30 mx-auto lw-[100%] tablet: w-[80%] h-[85vh] sticky top-[15%] "
+          className=" hidden tablet:block mt-12 z-30 mx-auto lw-[100%] tablet: w-[80%] h-[85vh]  sticky top-[15%] "
+        />
+        <motion.img
+          variants={fadeInAnimationVariants}
+          initial="hidden"
+          whileInView="visible"
+          src={imgref.ArtificiumChatbox}
+          alt=""
+          className=" tablet:hidden mt-12 z-30 mx-auto lw-[100%] tablet: w-[70%] lh-[85vh] absolute "
+        />
+        <img
+          src={imgref.mediacb}
+          alt=""
+          className=" tablet:hidden mt-12 mx-auto lw-[100%] tablet: min-w-full z-[-1] lh-[85vh] absolute "
         />
         {/* <motion.img
           style={{ position, top }}

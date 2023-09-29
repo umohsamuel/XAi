@@ -80,15 +80,15 @@ function Community() {
         whileInView="visible"
         className=" max-w-[411px] flex flex-col gap-[34.33px]"
       >
-        <h1 className=" text-5xl tablet:text-[65.34px] font-extrabold tracking-[-3.7px] leading-[79.1px]">
+        <h1 className=" text-[44.56px] tablet:text-[65.34px] font-extrabold tracking-[-3.7px] leading-[54px] tablet:leading-[79.1px]">
           Meet the worldwide community.
         </h1>
-        <p className="text-[#D1D1D2] text-[21.33px] tracking-[-0.16px]  leading-[34px] font-extralight">
+        <p className="text-[#D1D1D2] text-sm tablet:text-[21.33px] tracking-[-0.16px] leading-[23.2px] tablet:leading-[34px] font-extralight">
           Join a fast-growing community of developers and innovators connected
           all over the world, building the new era of the internet.
         </p>
 
-        <h1 className=" font-semibold text-[20.33px] tracking-[-0.36px] leading-[27.4px] flex gap-4">
+        <h1 className=" font-semibold text-xs tablet:text-[20.33px] tracking-[-0.36px] leading-[27.4px] flex gap-4">
           Community
           <svg
             width="13"

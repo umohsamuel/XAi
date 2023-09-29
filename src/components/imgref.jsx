@@ -19,6 +19,12 @@ import developerchatlogo from "../assets/images/developerchatlogo.svg";
 import cosmosforumlogo from "../assets/images/cosmosforumlogo.svg";
 import footervector from "../assets/images/footervector.svg";
 import cosmoslogo from "../assets/images/cosmoslogo.svg";
+import newmoutainsiedited from "../assets/images/newmoutainsiedited.svg";
+import newmountainfrm2 from "../assets/images/newmountainfrm2.svg";
+import yeahhhhhh from "../assets/images/yeahhhhhh.svg";
+import cancelburger from "../assets/images/cancelburger.svg";
+import menuburger from "../assets/images/menuburger.svg";
+import mediacb from "../assets/images/mediacb.svg";
 
 export default {
   xailogo,
@@ -40,5 +46,12 @@ export default {
   twitterlogo,
   developerchatlogo,
   cosmosforumlogo,
-  footervector,cosmoslogo
+  footervector,
+  cosmoslogo,
+  newmoutainsiedited,
+  newmountainfrm2,
+  yeahhhhhh,
+  cancelburger,
+  menuburger,
+  mediacb,
 };

@@ -71,7 +71,7 @@ function CoInVad() {
   }, []);
 
   return (
-    <div className="snap-center min-h-[100vh] mt-[50vh] ltablet:mt-[25vh]  tablet:flex items-center justify-between mx-auto relative bghere overflow-hidden ">
+    <div className="snap-center min-h-[100vh] mt-[50vh] ltablet:mt-[25vh]  flex-col flex tablet:flex-row items-center justify-between mx-auto relative bghere overflow-hidden ">
       <div
         id="blob"
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
@@ -83,7 +83,7 @@ function CoInVad() {
         src={imgref.greensource}
         className=" absolute top-[-29vh] left-[-4vw] w-[100vw] h-[100vh] z-[-1]"
       /> */}
-      <div className="z-[99999] w-[80%] h-[100vh] tablet:flex items-center justify-between mx-auto">
+      <div className="z-[99999] w-[80%] min-h-[100vh] flex-col flex tablet:flex-row items-center justify-between mx-auto">
         {CoInVadArr.map((things, index) => (
           <motion.div
             variants={fadeInAnimationVariants}
@@ -97,7 +97,7 @@ function CoInVad() {
               {things.title}
             </p>
             <div className=" mt-[62.33px]">
-              <h1 className=" font-bold text-[27.43px] tracking-[-0.73px] flex gap-4">
+              <h1 className=" font-bold text-[27.43px] tracking-[-0.73px] flex justify-between tablet:justify-normal gap-4">
                 {things.label}
                 <svg
                   width="13"
