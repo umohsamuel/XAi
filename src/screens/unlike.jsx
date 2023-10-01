@@ -50,7 +50,8 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikelefttop}
             alt=""
-            className=" max-h-[90vh]"
+            className=" max-h-[90vh] tablet:w-[70%]"
+            loading="lazy"
           />
           <motion.img
             variants={fadeInAnimationVariantsSlow}
@@ -58,7 +59,8 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikerighttop}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col tablet:flex-row justify-between gap-4 mt-4 tablet:mt-[32.13px] ">
@@ -68,7 +70,8 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomleft}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            loading="lazy"
           />
           <motion.img
             variants={fadeInAnimationVariantsSlow}
@@ -76,7 +79,8 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomright}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[70%]"
+            loading="lazy"
           />
         </div>
       </div>

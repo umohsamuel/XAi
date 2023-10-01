@@ -6,7 +6,7 @@ const fadeInAnimationVariantsFast = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.25,
+      delay: 0.05,
     },
   },
   hidden: {

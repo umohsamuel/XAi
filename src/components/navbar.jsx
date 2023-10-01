@@ -6,7 +6,7 @@ function Navbar() {
   
   const [openModal, setOpenModal] = useState(false);
   return (
-    <nav className="z-[99999] absolute flex justify-between items-center w-[80%] tablet:w-[90%] mt-[3.5%] h-14 border-[0.5px] border-[#807DA9] rounded-xl px-[1rem] tablet:pr-14 tablet:pl-9 left-[50%] translate-x-[-50%] backdrop-blur-[2px] top-[0.25%] tablet:top-0">
+    <nav className="z-[99999] absolute flex justify-between items-center w-[80%] tablet:w-[90%] mt-[3.5%] h-14 border-[0.5px] border-[#807DA9] rounded-xl px-[1rem] tablet:pr-14 tablet:pl-9 left-[50%] translate-x-[-50%] backdrop-blur-[2px] top-[0.5%] tablet:top-0">
       <img src={imgref.xailogo} alt="" />
 
       <ul className=" hidden tablet:flex gap-8 text-[#6A6B6D]">

@@ -11,18 +11,18 @@ const fadeInAnimationVariants = {
 
 function Chatbox() {
 
-  const targetRef = useRef(null)
-  const {scrollYProgress} = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"]
-  })
+  // const targetRef = useRef(null)
+  // const {scrollYProgress} = useScroll({
+  //   target: targetRef,
+  //   offset: ["start end", "end start"]
+  // })
 
-  const position = useTransform(scrollYProgress, (pos) => {
-    return pos >= 1 ? "sticky" : "absolute"
-  })
-  const top = useTransform(scrollYProgress, (pos) => {
-    return pos >= 1 ? "20%" : "0"
-  })
+  // const position = useTransform(scrollYProgress, (pos) => {
+  //   return pos >= 1 ? "sticky" : "absolute"
+  // })
+  // const top = useTransform(scrollYProgress, (pos) => {
+  //   return pos >= 1 ? "20%" : "0"
+  // })
 
   return (
     <div className="snap-start mt-32 w-full mx-auto flex flex-col gap-14 items-center mb-[25vh]">
@@ -41,6 +41,7 @@ function Chatbox() {
           src={imgref.ArtificiumChatbox}
           alt=""
           className=" hidden tablet:block mt-12 z-30 mx-auto lw-[100%] tablet: w-[80%] h-[85vh]  sticky top-[15%] "
+          loading="lazy"
         />
         <motion.img
           variants={fadeInAnimationVariants}
@@ -48,12 +49,14 @@ function Chatbox() {
           whileInView="visible"
           src={imgref.ArtificiumChatbox}
           alt=""
-          className=" tablet:hidden mt-12 z-30 mx-auto lw-[100%] tablet: w-[70%] lh-[85vh] absolute "
+          className=" tablet:hidden mt-12 z-30 mx-auto lw-[100%] tablet: w-[77.5%] object-contain lh-[85vh] absolute "
+          loading="lazy"
         />
         <img
           src={imgref.mediacb}
           alt=""
-          className=" tablet:hidden mt-12 mx-auto lw-[100%] tablet: min-w-full z-[-1] lh-[85vh] absolute "
+          className=" tablet: hidden mt-12 mx-auto flex justify-center self-center h-full tablet: lmin-w-full z-[30] lh-[85vh] absolute"
+          loading="lazy"
         />
         {/* <motion.img
           style={{ position, top }}

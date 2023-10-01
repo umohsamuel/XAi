@@ -9,12 +9,15 @@ function Footer() {
         <img
           src={imgref.footervector}
           alt=""
-          className="absolute right-0 top-0 w-[178px] tablet:w-full"
+          className="absolute right-0 top-0 w-[178px] tablet:w-fit"
+          // loading="lazy"
         />
 
         <div className=" flex w-[70%] tablet:w-[40%] justify-between z-[999]">
           <div>
-            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">COMPANY</h3>
+            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">
+              COMPANY
+            </h3>
             <ul className=" mt-4 text-[10px] tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
               <li>About</li>
               <li>Customers</li>
@@ -47,6 +50,7 @@ function Footer() {
               src={imgref.cosmoslogo}
               alt=""
               className=" border-r pr-6 border-[#2A292B] mb-4 tablet:mb-0"
+              loading="lazy"
             />
             <Footerlogo />
           </div>

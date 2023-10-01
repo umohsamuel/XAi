@@ -7,7 +7,7 @@ const fadeInAnimationVariantsFast = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.25,
+      delay: 0.05,
     },
   },
   hidden: {
@@ -21,7 +21,7 @@ const fadeInAnimationVariantsSlow = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.5,
+      delay: 0.09,
     },
   },
   hidden: {
@@ -35,7 +35,7 @@ const fadeInAnimationVariantslist = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.2 * index,
+      delay: 0.075 * index,
     },
   }),
   hidden: {
@@ -124,6 +124,7 @@ function Community() {
                 src={things.logo}
                 alt=""
                 className=" min-h-[32px] min-w-[32px]"
+                loading="lazy"
               />
             </div>
 

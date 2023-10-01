@@ -189,32 +189,32 @@ function Brandslogo() {
     // </div>
     <div className="ogadiv">
       <div className="logos-slide">
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt=""/>
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy"/>
       </div>
       <div className="logos-slide">
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
-        <img src={ramplogo} alt="" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
+        <img src={ramplogo} alt="" loading="lazy" />
       </div>
     </div>
   );

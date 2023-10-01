@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 const fadeInAnimationVariants = {
   visible: (index) => ({
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
-      delay: 0.5 * index,
+      delay: 0.1 * index,
     },
   }),
   hidden: {
     opacity: 0,
-    y: 100,
+    x: 100,
   },
 };
 
@@ -40,22 +40,7 @@ const CoInVadArr = [
   },
 ];
 
-// const blob = document.getElementById("blob");
-
-// window.onpointermove = (event) => {
-//   const { clientX, clientY } = event;
-
-//   blob.animate(
-//     {
-//       left: `${clientX}px`,
-//       top: `${clientY}px`,
-//     },
-//     { duration: 1000, fill: "forwards" }
-//   );
-// };
-
 function CoInVad() {
-
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (event) => {
@@ -71,19 +56,14 @@ function CoInVad() {
   }, []);
 
   return (
-    <div className="snap-center min-h-[100vh] mt-[50vh] ltablet:mt-[25vh]  flex-col flex tablet:flex-row items-center justify-between mx-auto relative bghere overflow-hidden ">
+    <div className="snap-center min-h-[100vh] mt-[50vh] ltablet:mt-[25vh] flex-col flex tablet:flex-row items-center justify-between mx-auto relative bghere overflow-hidden ">
       <div
         id="blob"
-        style={{ left: `${position.x}px`, top: `${position.y}px` }}
+        style={{ left: `${position.x}px`, top: `${position.y}px`, height: "62.5%", width: "62.5%" }}
       ></div>
-      <div id="blur"></div>
-
-      <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
-      {/* <img
-        src={imgref.greensource}
-        className=" absolute top-[-29vh] left-[-4vw] w-[100vw] h-[100vh] z-[-1]"
-      /> */}
-      <div className="z-[99999] w-[80%] min-h-[100vh] flex-col flex tablet:flex-row items-center justify-between mx-auto">
+      <div id="blur" className="w-full h-full"></div>
+      {/* <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div> */}
+      <div className="z-[99999] w-[80%] tablet:w-[90%] min-h-[100vh] flex-col flex tablet:flex-row items-center justify-between mx-auto py-8 tablet:py-0">
         {CoInVadArr.map((things, index) => (
           <motion.div
             variants={fadeInAnimationVariants}
@@ -113,12 +93,12 @@ function CoInVad() {
                 </svg>
               </h1>
               <p className=" mt-4 font-light text-base">{things.description}</p>
-              <img src={things.logo} alt="" className=" mt-16" />
+              <img src={things.logo} alt="" className=" mt-16" loading="lazy" />
             </div>
           </motion.div>
         ))}
       </div>
-      <div className="absolute h-[20vh] bottom-0 translate-y-[50%] w-full bg-gradient-to-t from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
+      {/* <div className="absolute h-[20vh] bottom-0 translate-y-[50%] w-full bg-gradient-to-t from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div> */}
     </div>
   );
 }

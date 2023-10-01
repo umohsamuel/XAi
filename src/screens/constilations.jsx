@@ -62,6 +62,7 @@ function Constilations() {
         loop
         muted
         className="min-w-[100vw] absolute left-[-10px] top-0 translate-y-[-10%] lh-[40vh] lh-[140px] z-[10] lh-32 blur-sm"
+        loading="lazy"
       />
       <img
         // src={video.boy}
@@ -70,6 +71,7 @@ function Constilations() {
         loop
         muted
         className="w-full absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] lh-[140px] z-[10] lh-32 blur-sm"
+        loading="lazy"
       />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
         <div className=" w-[100%] h-[100%]  absolute ">

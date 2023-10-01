@@ -30,7 +30,7 @@ function Hero() {
           muted
           controls={false}
           onContextMenu={handleContextMenu}
-          className="egbon absolute w-[90%] tablet:w-[95%] h-[95%] object-cover rounded-3xl border z-[1]"
+          className="egbon absolute w-[90%] tablet:w-[95%] h-[85%] tablet:h-[95%] object-cover rounded-3xl border z-[1]"
         />
       </div>
       {/* Navbar used to be here  */}
