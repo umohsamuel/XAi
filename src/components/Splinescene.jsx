@@ -6,7 +6,7 @@ export default function Splinescene() {
     return(
 
 
-        <Spline scene="https://prod.spline.design/27Q-Wmh7akh7YohE/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/DkzHEW1WPRMx6HcH/scene.splinecode" />
 
     );
 
