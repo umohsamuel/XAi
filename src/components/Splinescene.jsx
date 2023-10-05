@@ -6,7 +6,7 @@ export default function Splinescene() {
     return(
 
 
-        <Spline scene="./../assets/3Dassets/planetsday_8.splinecode" />
+        <Spline scene="https://prod.spline.design/dpTC477hE8QyTukQ/scene.splinecode" />
 
     );
 
