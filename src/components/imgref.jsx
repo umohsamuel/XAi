@@ -25,9 +25,20 @@ import yeahhhhhh from "../assets/images/yeahhhhhh.svg";
 import cancelburger from "../assets/images/cancelburger.svg";
 import menuburger from "../assets/images/menuburger.svg";
 import mediacb from "../assets/images/mediacb.svg";
+import alanlogo from "../assets/images/alanlogo.svg";
+import arclogo from "../assets/images/arclogo.svg";
+import cashapplogo from "../assets/images/cashapplogo.svg";
+import decariptlogo from "../assets/images/decariptlogo.svg";
+import loomlogo from "../assets/images/loomlogo.svg";
+import opensealogo from "../assets/images/opensealogo.svg";
+import pitchlogo from "../assets/images/pitchlogo.svg";
+import ramplogo from "../assets/images/ramplogo.svg";
+import raycastlogo from "../assets/images/raycastlogo.svg";
+import vercellogo from "../assets/images/vercellogo.svg";
 
 export default {
-  xailogo,
+  xailogo,ramplogo,pitchlogo,opensealogo,
+  raycastlogo,
   ArtificiumChatbox,
   clippathchatbox,
   connectlogo,
@@ -54,4 +65,10 @@ export default {
   cancelburger,
   menuburger,
   mediacb,
+  alanlogo,
+  arclogo,
+  cashapplogo,
+  decariptlogo,
+  loomlogo,
+  vercellogo,
 };

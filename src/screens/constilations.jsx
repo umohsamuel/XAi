@@ -80,7 +80,7 @@ function Constilations() {
             {/* Content of the front element */}
           </div>
 
-          <Splinescene events-target="global" />
+          {/* <Splinescene events-target="global" /> */}
         </div>
 
         {/* content of section 2  */}
