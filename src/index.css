@@ -184,7 +184,7 @@
 .scroller[data-animated="true"] .scroller__inner {
   width: fit-content;
   flex-wrap: nowrap;
-  animation: logoscroll 15s linear infinite;
+  animation: logoscroll 10s linear infinite;
 }
 
 @keyframes logoscroll {

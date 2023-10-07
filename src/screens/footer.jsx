@@ -13,12 +13,12 @@ function Footer() {
           // loading="lazy"
         />
 
-        <div className=" flex w-[70%] tablet:w-[40%] justify-between z-[999]">
+        <div className=" flex w-[100%] tablet:w-[40%] justify-between z-[999]">
           <div>
-            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">
+            <h3 className=" font-medium text-xs tablet:text-[10px] text-[#5E5E61]">
               COMPANY
             </h3>
-            <ul className=" mt-4 text-[10px] tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
+            <ul className=" mt-4 text-sm tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
               <li>About</li>
               <li>Customers</li>
               <li>Blog</li>
@@ -28,10 +28,10 @@ function Footer() {
           </div>
 
           <div>
-            <h3 className=" font-medium text-[8px] tablet:text-[10px] text-[#5E5E61]">
+            <h3 className=" font-medium text-xs tablet:text-[10px] text-[#5E5E61]">
               RESOURCES
             </h3>
-            <ul className=" mt-4 text-[10px] tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
+            <ul className=" mt-4 text-sm tablet:text-[13px] font-normal flex flex-col gap-[7.5px] text-[#A9AAAD]">
               <li>FAQs</li>
               <li>Careers</li>
               <li>Partnerships</li>
@@ -56,11 +56,11 @@ function Footer() {
           </div>
 
           <div className=" mt-[59.44px]">
-            <p className=" font-light text-[13px] tracking-[0.05px] text-[#888789]">
+            <p className=" font-light text-sm tracking-[0.05px] text-[#888789]">
               Cosmos is a registered trademark of the{" "}
               <span className=" text-white">Interchain Foundation.</span>
             </p>
-            <p className=" pt-[22.99px] font-light text-[13px] text-[#888789] tracking-[0.05px] leading-[21.1px]">
+            <p className=" pt-[22.99px] font-light text-sm text-justify text-[#888789] tracking-[0.05px] leading-[21.1px]">
               This website is maintained by the Interchain Foundation (ICF) on
               behalf of the decentralized community. The contents and opinions
               of this website do not necessarily reflect those of the ICF. This

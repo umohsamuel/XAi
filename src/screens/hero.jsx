@@ -7,7 +7,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.05 ,
+      delay: 0.05,
     },
   },
   hidden: {
@@ -21,7 +21,7 @@ function Hero() {
     e.preventDefault();
   };
   return (
-    <div className="snap-start flex flex-col justify-center relative w-full h-[100vh] z-20 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+    <div className=" snap-start flex flex-col justify-center relative w-full h-[100vh] z-20 bg-opacity-30 backdrop-filter backdrop-blur-lg">
       <div className=" h-full w-full flex absolute justify-center items-center rounded-3xl ">
         <video
           src={video.bg1p1}
@@ -30,7 +30,7 @@ function Hero() {
           muted
           controls={false}
           onContextMenu={handleContextMenu}
-          className="egbon absolute w-[90%] tablet:w-[95%] h-[85%] tablet:h-[95%] object-cover rounded-3xl border z-[1]"
+          className="egbon absolute w-[90%] tablet:w-[95%] h-[95%] tablet:h-[95%] object-cover rounded-3xl border z-[1]"
         />
       </div>
       {/* Navbar used to be here  */}
@@ -39,7 +39,7 @@ function Hero() {
         variants={fadeInAnimationVariants}
         initial="hidden"
         whileInView="visible"
-        className="z-30  tablet:w-[34.125rem] max-w-[80%] pl-10 tablet:pl-32"
+        className="z-30  tablet:w-[34.125rem] w-[80%] mx-auto flex flex-col tablet:mx-0 lpl-10 tablet:pl-32"
       >
         <p className="flex items-center font-medium text-sm gap-2">
           Okay let us{" "}
@@ -71,24 +71,26 @@ function Hero() {
             </svg>
           </span>
         </p>
-        <h1 className="font-bold text-2xl tablet:text-5xl mt-5 text-transparent bg-clip-text bg-gradient-to-bl from-[#D5D5D8] to-[#EDEBF5]">
+        <h1 className="font-bold text-3xl tablet:text-5xl mt-5 text-transparent bg-clip-text bg-gradient-to-bl from-[#D5D5D8] to-[#EDEBF5]">
           A.I That Answers Everything About the Universe
         </h1>
-        <button className="flex justify-center items-center gap-4 bg-white font-normal text-sm text-black rounded-full px-8 py-3 mt-12">
-          Explore{" "}
-          <svg
-            width="6"
-            height="9"
-            viewBox="0 0 6 9"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.44112 0.237305L0.445312 1.23312L3.67994 4.4748L0.445312 7.71649L1.44112 8.71231L5.67863 4.4748L1.44112 0.237305Z"
+        <div>
+          <button className="flex justify-center items-center gap-4 bg-white font-normal text-sm text-black rounded-full px-8 py-3 mt-12">
+            Explore{" "}
+            <svg
+              width="6"
+              height="9"
+              viewBox="0 0 6 9"
               fill="currentColor"
-            />
-          </svg>
-        </button>
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.44112 0.237305L0.445312 1.23312L3.67994 4.4748L0.445312 7.71649L1.44112 8.71231L5.67863 4.4748L1.44112 0.237305Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
       </motion.div>
     </div>
   );

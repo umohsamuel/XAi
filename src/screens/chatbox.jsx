@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
 import imgref from "../components/imgref";
 import { useScroll, useTransform, motion } from "framer-motion";
-import clipboardgroupkini from "../assets/images/clipboardgroupkini.svg"
 
 
 const fadeInAnimationVariants = {
-  visible: { opacity: 1, scale: 1.25, transition: { duration: 0.45} },
+  visible: { opacity: 1, scale: 1.2, transition: { duration: 0.2} },
   hidden: { opacity: 0, scale: 1 },
 };
 
@@ -25,22 +24,22 @@ function Chatbox() {
   // })
 
   return (
-    <div className="snap-start mt-32 w-full mx-auto flex flex-col gap-14 items-center mb-[25vh]">
-      <p className=" text-[27.37px] tablet:text-[51px] font-medium tracking-[-1.12px]">
+    <div className=" snap-start mt-[10vh] min-h-[100vh] w-full mx-auto flex flex-col content-between tablet:gap-14 items-center lmb-[10vh]">
+      <p className=" text-[40px] tablet:text-[51px] font-bold tracking-[-1.12px]">
         Chatbot that
       </p>
-      <p className=" font-normal text-center tablet:max-w-[605px] w-full max-w-[325px] px-[5%] tablet:leading-7 text-xs tablet:text-[22px]">
+      <p className=" font-normal text-center tablet:max-w-[605px] w-full max-w-[325px] px-[5%] tablet:leading-7 text-xl tablet:text-[22px]">
         Designed to the last pixel and engineered with unforgiving precision,
         Linear combines UI elegance with world-class performance.
       </p>
-      <div className=" bgforthis h-[50vh] tablet:h-[150vh] origin-center  mx-auto w-full relative flex justify-center">
+      <div className=" mt-12 min-h-[50vh] tablet:h-[150vh] mx-auto w-full lrelative flex justify-center">
         <motion.img
           variants={fadeInAnimationVariants}
           initial="hidden"
           whileInView="visible"
           src={imgref.ArtificiumChatbox}
           alt=""
-          className=" hidden tablet:block mt-12 z-30 mx-auto lw-[100%] tablet: w-[80%] h-[85vh]  sticky top-[15%] "
+          className=" hidden tablet:block z-30 mx-auto w-[80%] h-[85vh]"
           loading="lazy"
         />
         <motion.img
@@ -49,13 +48,13 @@ function Chatbox() {
           whileInView="visible"
           src={imgref.ArtificiumChatbox}
           alt=""
-          className=" tablet:hidden mt-12 z-30 mx-auto lw-[100%] tablet: w-[77.5%] object-contain lh-[85vh] absolute "
+          className=" tablet:hidden z-30 mx-auto w-[77.5%] object-contain"
           loading="lazy"
         />
         <img
           src={imgref.mediacb}
           alt=""
-          className=" tablet: hidden mt-12 mx-auto flex justify-center self-center h-full tablet: lmin-w-full z-[30] lh-[85vh] absolute"
+          className=" hidden mx-auto tablet:flex h-full absolute top-[50%] translate-y-[-50%]"
           loading="lazy"
         />
         {/* <motion.img

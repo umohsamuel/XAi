@@ -19,14 +19,14 @@ function Home() {
     e.preventDefault();
   };
   return (
-    <div className="w-full relative snap-mandatory snap-y scroll-smooth tablet:overflow-auto  overflow-hidden">
+    <div className="w-full h-full relative snap-mandatory snap-y scroll-smooth tablet:overflow-auto">
       <Navbar />
 
       <Hero />
 
       <Constilations />
 
-      <Chatbox />
+        <Chatbox />
       {/* <div className=" h-[25vh] bg-gradient-to-b from-transparent to-[#05080A]"></div> */}
 
       <CoInVad />
@@ -37,8 +37,8 @@ function Home() {
 
       <Community />
 
-      <div className="relative my-[25vh] h-[100vh]">
-        {/* <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
+      {/* <div className="relative my-[25vh] h-[100vh]"> */}
+      {/* <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div>
         <video
           src={video.unstablepage}
           autoPlay
@@ -50,7 +50,7 @@ function Home() {
           loading="lazy"
         />
         <div className="absolute h-[20vh] bottom-0 translate-y-[50%] w-full bg-gradient-to-t from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div> */}
-      </div>
+      {/* </div> */}
 
       <Future />
 

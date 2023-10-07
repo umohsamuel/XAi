@@ -27,7 +27,7 @@ function Brandslogo() {
   }
 }, []);
   return (
-    <div className="scroller flex lmt-[10vh] overflow-x-hidden">
+    <div className="scroller flex lmt-[10vh] z-20 h-full overflow-x-hidden">
       <div className="scroller__inner">
         <img src={imgref.alanlogo} alt="" />
         <img src={imgref.arclogo} alt="" />

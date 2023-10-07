@@ -35,10 +35,10 @@ const fadeInAnimationVariantsSlow = {
 function Unlike() {
   return (
     <div className="snap-start mt-[25vh] flex flex-col items-center max-w-[95%] mx-auto">
-      <h1 className=" text-center max-w-[445px] font-medium text-[21.05px] tablet:text-[51px] tracking-[-0.46px] tablet:tracking-[-1.12px] tablet:leading-[56px] leading-[23.1px]">
+      <h1 className=" text-center max-w-[445px] font-medium text-[40px] tablet:text-[51px] tracking-[-0.46px] tablet:tracking-[-1.12px] tablet:leading-[56px] leading-[40px]">
         Unlike any tool you’ve used before
       </h1>
-      <p className=" mt-[27px] max-w-[605px] px-[5%] tablet:px-0 text-center font-normal text-xs tablet:text-[22px] tablet:leading-[28.6px] text-[#B4BCD0]">
+      <p className=" mt-[27px] max-w-[605px] px-[5%] tablet:px-0 text-center font-normal text-xl tablet:text-[22px] tablet:leading-[28.6px] text-[#B4BCD0]">
         Designed to the last pixel and engineered with unforgiving precision,
         Linear combines UI elegance with world-class performance.
       </p>
@@ -50,7 +50,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikelefttop}
             alt=""
-            className=" max-h-[90vh] tablet:w-[70%]"
+            className=" sticky top-0 max-h-[90vh] tablet:w-[70%]"
             loading="lazy"
           />
           <motion.img
@@ -59,7 +59,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikerighttop}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
             loading="lazy"
           />
         </div>
@@ -70,7 +70,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomleft}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
             loading="lazy"
           />
           <motion.img
@@ -79,7 +79,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomright}
             alt=""
-            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[70%]"
+            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[70%]"
             loading="lazy"
           />
         </div>

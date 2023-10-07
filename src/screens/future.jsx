@@ -12,7 +12,7 @@ function Future() {
           <p>Available today.</p>
         </h1>
 
-        <div className="flex items-center text-[10px] tablet:text-base font-medium leading-[24.5px] w-full max-w-[331.05px] tablet:justify-between gap-[2rem] justify-center">
+        <div className="flex items-center text-[14px] tablet:text-base font-medium leading-[24.5px] lw-full max-w-[331.05px] tablet: justify-between lgap-[2rem] w-[95%]">
           <button className=" bg-gradient-to-r from-[#455EB5] from-50% via-[#6040D2] to-[#673FD7] px-6 py-3 rounded-full whitespace-nowrap">
             Sign up for free
           </button>

@@ -55,13 +55,13 @@ function Constilations() {
   }, []);
 
   return (
-    <div className="snap-start relative h-full w-full snap-y">
+    <div className="snap-start relative h-full mb-[140px] w-full snap-y">
       <img
         src={imgref.yeahhhhhh}
         autoPlay
         loop
         muted
-        className="min-w-[100vw] absolute left-[-10px] top-0 translate-y-[-10%] lh-[40vh] lh-[140px] z-[10] lh-32 blur-sm"
+        className="min-w-[100vw] absolute left-[-10px] top-0 translate-y-[-10%] lh-[40vh] h-[140px] z-[10] lh-32 blur-sm"
         loading="lazy"
       />
       <img
@@ -70,11 +70,11 @@ function Constilations() {
         autoPlay
         loop
         muted
-        className="w-full absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] lh-[140px] z-[10] lh-32 blur-sm"
+        className="w-full absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] h-[140px] z-[10] lh-32 blur-sm"
         loading="lazy"
       />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
-        <div className=" w-[100%] h-[100%]  absolute ">
+        <div className="  w-[100%] h-[100%]  absolute ">
           {/* This is the element you want to be non-responsive to mouse events */}
           <div className="front-element">
             {/* Content of the front element */}
@@ -84,11 +84,11 @@ function Constilations() {
         </div>
 
         {/* content of section 2  */}
+        <Brandslogo />
         <div
-          className="z-30 h-full -top-3 flex flex-col gap-[25vh]"
+          className="z-30 mt-8 h-[100vh] -top-3 flex flex-col content-between"
           style={{ pointerEvents: "none" }}
         >
-          <Brandslogo />
 
           <motion.div
             variants={fadeInAnimationVariants}
@@ -96,10 +96,10 @@ function Constilations() {
             whileInView="visible"
             className="w-full flex flex-col justify-center items-center text-center  gap-6 "
           >
-            <h1 className="font-black text-[33.08px] tracking-[-1.87px] tablet:text-7xl max-w-[60%] tablet:max-w-[32.3125rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F5D1FF] to-[#ffffff]  ">
+            <h1 className="font-black text-[40px] tracking-[-1.87px] tablet:text-7xl lmax-w-[60%] tablet:max-w-[32.3125rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F5D1FF] to-[#ffffff]  ">
               The Universe Unveiled.
             </h1>
-            <p className=" max-w-[192px] tablet:max-w-[30.6rem] text-[#FFD1D1] text-xs tablet:text-base font-extralight">
+            <p className=" lmax-w-[192px] tablet:max-w-[30.6rem] text-[#FFD1D1] text-xl tablet:text-base font-extralight">
               Discover the Hidden Wonders of the Cosmos - Dive into the
               Universe's Greatest Mysteries with Our A.I
             </p>
@@ -107,7 +107,7 @@ function Constilations() {
 
           <div className="w-full h-full px-[5%] flex flex-col justify-end items-center">
             <div>
-              <p className=" font-semibold text-[6px] tablet:text-[10.79px] text-[#818B95]">
+              <p className=" font-semibold text-[10px] tablet:text-[10.79px] text-[#818B95]">
                 COMMUNITY-OWNED AND OPERATED
               </p>
               <div className=" w-[100%] justify-between mx-auto flex tablet:gap-24">
@@ -116,7 +116,7 @@ function Constilations() {
                   initial="hidden"
                   whileInView="visible"
                   custom={index1}
-                  className=" tracking-[-1.05px] tablet:tracking-[-0.166875rem] max-w-[486px] font-extrabold text-[18.82px] tablet:text-[47.74px]"
+                  className=" tracking-[-1.05px] tablet:tracking-[-0.166875rem] max-w-[486px] font-extrabold text-[23.5px] tablet:text-[47.74px]"
                 >
                   Enter a new universe of connected services.
                 </motion.p>
@@ -125,15 +125,15 @@ function Constilations() {
                   initial="hidden"
                   whileInView="visible"
                   custom={index2}
-                  className=" font-extrabold text-[24.61px] tablet:text-[62.43px] tracking-[-1.4px] tablet:tracking-[-3.55px]"
+                  className=" font-extrabold text-[31px] tablet:text-[62.43px] tracking-[-1.4px] tablet:tracking-[-3.55px]"
                 >
                   246+
                 </motion.p>
               </div>
             </div>
           </div>
-          <button className="w-[80%] mx-auto flex gap-4  items-center ">
-            <span className="pb-1 font-semibold text-xs tablet:text-[20.33px]">
+          <button className="w-[90%] mt-4 mx-auto flex gap-4  items-center ">
+            <span className="pb-1 font-semibold text-sm tablet:text-[20.33px]">
               Powerful features{" "}
             </span>
             <svg

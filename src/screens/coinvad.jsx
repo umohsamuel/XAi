@@ -71,7 +71,7 @@ function CoInVad() {
             whileInView="visible"
             custom={index}
             key={index}
-            className="max-w-[271px] h-[100vh] tablet:h-fit mb-12 tablet:mb-0"
+            className=" max-w-[271px] h-[100vh] tablet:h-fit mb-12 tablet:mb-0"
           >
             <p className=" font-semibold text-[13px] text-[#808181]">
               {things.title}
