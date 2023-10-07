@@ -56,7 +56,7 @@ function Constilations() {
 
   return (
     <div className="snap-start relative h-full mb-[140px] w-full snap-y">
-      <img
+      {/* <img
         src={imgref.yeahhhhhh}
         autoPlay
         loop
@@ -65,15 +65,14 @@ function Constilations() {
         loading="lazy"
       />
       <img
-        // src={video.boy}
         src={imgref.yeahhhhhh}
         autoPlay
         loop
         muted
         className="min-w-[100vw] absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] h-[140px] z-[10] lh-32 blur-sm"
         loading="lazy"
-      />
-      <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
+      /> */}
+      <div className=" mt-32 flex flex-col min-h-fit relative snap-start">
         <div className="  w-[100%] h-[100%]  absolute ">
           {/* This is the element you want to be non-responsive to mouse events */}
           <div className="front-element">

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import imgref from "../components/imgref";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const fadeInAnimationVariants = {
@@ -9,7 +9,6 @@ const fadeInAnimationVariants = {
 };
 
 function Chatbox() {
-
   // const targetRef = useRef(null)
   // const {scrollYProgress} = useScroll({
   //   target: targetRef,
