@@ -4,7 +4,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 
 const fadeInAnimationVariants = {
-  visible: { opacity: 1, scale: 1.2, transition: { duration: 0.2} },
+  visible: { opacity: 1, scale: 1.2, transition: { duration: 0.02} },
   hidden: { opacity: 0, scale: 1 },
 };
 
@@ -32,7 +32,7 @@ function Chatbox() {
         Designed to the last pixel and engineered with unforgiving precision,
         Linear combines UI elegance with world-class performance.
       </p>
-      <div className=" mt-12 min-h-[50vh] tablet:h-[150vh] mx-auto w-full lrelative flex justify-center">
+      <div className=" mt-12 min-h-[50vh] tablet:h-[150vh] mx-auto w-full relative flex justify-center">
         <motion.img
           variants={fadeInAnimationVariants}
           initial="hidden"
@@ -54,7 +54,7 @@ function Chatbox() {
         <img
           src={imgref.mediacb}
           alt=""
-          className=" hidden mx-auto tablet:flex h-full absolute top-[50%] translate-y-[-50%]"
+          className=" hidden mx-auto tablet:flex h-full absolute top-[25%] translate-y-[-50%]"
           loading="lazy"
         />
         {/* <motion.img

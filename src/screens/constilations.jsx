@@ -70,7 +70,7 @@ function Constilations() {
         autoPlay
         loop
         muted
-        className="w-full absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] h-[140px] z-[10] lh-32 blur-sm"
+        className="min-w-[100vw] absolute rotate-180 bottom-0 translate-y-[30%] lh-[40vh] h-[140px] z-[10] lh-32 blur-sm"
         loading="lazy"
       />
       <div className=" mt-32 flex flex-col min-h-[200vh] relative snap-start">
@@ -80,7 +80,7 @@ function Constilations() {
             {/* Content of the front element */}
           </div>
 
-          {/* <Splinescene events-target="global" /> */}
+          <Splinescene events-target="global" />
         </div>
 
         {/* content of section 2  */}

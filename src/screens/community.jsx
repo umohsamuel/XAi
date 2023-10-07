@@ -73,7 +73,7 @@ function Community() {
   ];
 
   return (
-    <div className="snap-start mt-[50vh] min-h-[100vh] block tablet:flex justify-between mx-auto w-[80%] max-w-[100vw] lmax-w-[1043px]">
+    <div className="snap-start mt-[10vh] min-h-[100vh] block tablet:flex justify-between mx-auto w-[80%] max-w-[100vw] lmax-w-[1043px]">
       <motion.div
         variants={fadeInAnimationVariantsFast}
         initial="hidden"
@@ -108,7 +108,7 @@ function Community() {
         variants={fadeInAnimationVariantsSlow}
         initial="hidden"
         whileInView="visible"
-        className=" mt-[25vh] tablet:mt-0 max-w-[447.67px] flex  flex-col gap-16"
+        className=" mt-[10vh] tablet:mt-0 max-w-[447.67px] flex  flex-col gap-16"
       >
         {CommunityArr.map((things, index) => (
           <motion.div

@@ -4,7 +4,7 @@ import Footerlogo from "../components/footerlogos";
 
 function Footer() {
   return (
-    <footer className="snap-start w-[95%] h-full mx-auto mt-[25vh] mb-[3px] p-[1.1px] bg-gradient-to-tr from-[#FFFFFF]  to-[#353436] rounded-[37.39px] ">
+    <footer className="snap-start w-[95%] h-full mx-auto mt-[10vh] mb-[3px] p-[1.1px] bg-gradient-to-tr from-[#FFFFFF]  to-[#353436] rounded-[37.39px]">
       <div className=" min-h-fit lpt-[68px] tablet:py-[26.167px] px-[10%] tablet:px-[88px] bg-gradient-to-tr from-[#0D0C0F] to-[#222124] rounded-[37.39px] relative flex flex-col gap-[74px] py-14">
         <img
           src={imgref.footervector}

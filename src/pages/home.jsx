@@ -19,7 +19,7 @@ function Home() {
     e.preventDefault();
   };
   return (
-    <div className="w-full h-full relative snap-mandatory snap-y scroll-smooth tablet:overflow-auto">
+    <div className="w-full h-full relative snap-mandatory snap-y scroll-smooth">
       <Navbar />
 
       <Hero />

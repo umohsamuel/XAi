@@ -44,13 +44,13 @@ function Unlike() {
       </p>
       <div className=" mx-auto mt-[138px] max-w-[100%] w-[90%]">
         <div className="flex flex-col tablet:flex-row justify-between gap-4 ">
-          <motion.img
+          <img
             variants={fadeInAnimationVariantsFast}
             initial="hidden"
             whileInView="visible"
             src={imgref.unlikelefttop}
             alt=""
-            className=" sticky top-0 max-h-[90vh] tablet:w-[70%]"
+            className=" max-h-[90vh] tablet:w-[70%]"
             loading="lazy"
           />
           <motion.img
@@ -59,7 +59,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikerighttop}
             alt=""
-            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
             loading="lazy"
           />
         </div>
@@ -70,7 +70,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomleft}
             alt=""
-            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[30%]"
             loading="lazy"
           />
           <motion.img
@@ -79,7 +79,7 @@ function Unlike() {
             whileInView="visible"
             src={imgref.unlikebottomright}
             alt=""
-            className="sticky top-0 max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[70%]"
+            className=" max-h-[90vh] mt-[10vh] tablet:mt-0 tablet:w-[70%]"
             loading="lazy"
           />
         </div>

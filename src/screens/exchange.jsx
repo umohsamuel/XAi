@@ -9,7 +9,7 @@ function Exchange() {
     e.preventDefault();
   };
   return (
-    <div className="snap-start mx-auto flex flex-col items-center mt-[50vh] max-w-[90%] relative">
+    <div className="snap-start mx-auto flex flex-col items-center mt-[10vh] max-w-[90%] relative">
       <video
         src={video.exchangevid}
         autoPlay
