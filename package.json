@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    
+    "@react-three/drei": "^9.88.9",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.455",
     "framer-motion": "^10.16.4",
@@ -19,7 +20,7 @@
     "react-intersection-observer": "^9.5.2",
     "react-router": "^6.15.0",
     "react-router-dom": "^6.15.0",
-    "react-spline": "^1.1.0"
+    "react-three-fiber": "^6.0.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
