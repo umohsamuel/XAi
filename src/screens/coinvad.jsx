@@ -56,10 +56,15 @@ function CoInVad() {
   }, []);
 
   return (
-    <div className="snap-center min-h-[100vh] mt-[50vh] ltablet:mt-[25vh] flex-col flex tablet:flex-row items-center justify-between mx-auto relative bghere overflow-hidden ">
+    <div className="snap-center min-h-[100vh] mt-[10vh] ltablet:mt-[25vh] flex-col flex tablet:flex-row items-center justify-between mx-auto relative bghere overflow-hidden ">
       <div
         id="blob"
-        style={{ left: `${position.x}px`, top: `${position.y}px`, height: "62.5%", width: "62.5%" }}
+        style={{
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+          height: "62.5%",
+          width: "62.5%",
+        }}
       ></div>
       <div id="blur" className="w-full h-full"></div>
       {/* <div className="absolute h-[20vh] top-0 translate-y-[-50%] w-full bg-gradient-to-b from-[#000000] to-transparent from-70% z-50 blur-sm border border-transparent"></div> */}
@@ -71,12 +76,14 @@ function CoInVad() {
             whileInView="visible"
             custom={index}
             key={index}
-            className=" max-w-[271px] h-[100vh] tablet:h-fit mb-12 tablet:mb-0"
+            className={` ${
+              CoInVadArr.length === index ? "" : "mb-14"
+            }  max-w-[271px] tablet:h-fit tablet:mb-0`}
           >
             <p className=" font-semibold text-[13px] text-[#808181]">
               {things.title}
             </p>
-            <div className=" mt-[62.33px]">
+            <div className="  tablet:mt-[62.33px] mt-[31px]">
               <h1 className=" font-bold text-[27.43px] tracking-[-0.73px] flex justify-between tablet:justify-normal gap-4">
                 {things.label}
                 <svg

@@ -1,6 +1,6 @@
 import React from "react";
 import video from "../components/video";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
   visible: {
@@ -35,10 +35,10 @@ function Hero() {
       </div>
       {/* Navbar used to be here  */}
 
-      <motion.div
-        variants={fadeInAnimationVariants}
-        initial="hidden"
-        whileInView="visible"
+      <div
+        // variants={fadeInAnimationVariants}
+        // initial="hidden"
+        // whileInView="visible"
         className="z-30  tablet:w-[34.125rem] w-[80%] mx-auto flex flex-col tablet:mx-0 lpl-10 tablet:pl-32"
       >
         <p className="flex items-center font-medium text-sm gap-2">
@@ -91,7 +91,7 @@ function Hero() {
             </svg>
           </button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

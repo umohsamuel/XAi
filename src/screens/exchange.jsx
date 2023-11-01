@@ -22,15 +22,11 @@ function Exchange() {
       />
 
       <div className="flex flex-col tablet:flex-row ltablet:justify-center items-center tablet:justify-between tablet:w-full ipad:w-[80%]  ltablet:w-[80%] gap-4 tablet:gap-0 z-10">
-        {/* <img src={imgref.exchangetopleft} alt="" /> */}
         <ThinExCard />
-        {/* <img src={imgref.exchangetopright} alt="" /> */}
         <FatExCard />
       </div>
       <div className="flex flex-col tablet:flex-row items-center tablet:justify-between tablet:w-full ipad:w-[80%] gap-4 tablet:gap-0 mt-4 tablet:mt-[7.5vh] lmt-[87.86px]">
-        {/* <img src={imgref.exchangebottomleft} alt="" /> */}
         <FatExCard />
-        {/* <img src={imgref.exchangebottomright} alt="" /> */}
         <ThinExCard />
       </div>
     </div>

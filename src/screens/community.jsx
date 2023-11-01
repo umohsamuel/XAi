@@ -73,11 +73,11 @@ function Community() {
   ];
 
   return (
-    <div className="snap-start mt-[10vh] min-h-[100vh] block tablet:flex justify-between mx-auto w-[80%] max-w-[100vw] lmax-w-[1043px]">
-      <motion.div
-        variants={fadeInAnimationVariantsFast}
-        initial="hidden"
-        whileInView="visible"
+    <div className="snap-start mt-[10vh] min-h-[100vh] h-fit block tablet:flex justify-between mx-auto w-[80%] max-w-[100vw] lmax-w-[1043px]">
+      <div
+        // variants={fadeInAnimationVariantsFast}
+        // initial="hidden"
+        // whileInView="visible"
         className=" max-w-[411px] flex flex-col gap-[34.33px]"
       >
         <h1 className=" text-[44.56px] text-center tablet:text-left tablet:text-[65.34px] font-extrabold tracking-[-3.7px] leading-[54px] tablet:leading-[79.1px]">
@@ -103,12 +103,12 @@ function Community() {
             />
           </svg>
         </h1>
-      </motion.div>
-      <motion.div
-        variants={fadeInAnimationVariantsSlow}
-        initial="hidden"
-        whileInView="visible"
-        className=" mt-[10vh] tablet:mt-0 max-w-[447.67px] flex  flex-col gap-16"
+      </div>
+      <div
+        // variants={fadeInAnimationVariantsSlow}
+        // initial="hidden"
+        // whileInView="visible"
+        className=" mt-[10vh] h-fit tablet:mt-0 max-w-[447.67px] flex  flex-col gap-16"
       >
         {CommunityArr.map((things, index) => (
           <motion.div
@@ -151,7 +151,7 @@ function Community() {
             </div>
           </motion.div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
